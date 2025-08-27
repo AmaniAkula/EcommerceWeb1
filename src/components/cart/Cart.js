@@ -1,20 +1,25 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { GlobalContext } from "../../context/GlobalState";
+
 import "./Cart.css";
+import { useSelector, useDispatch } from 'react-redux';
+// import { removeFromCart } from '../../redux/actions/cartActions.js';
+
 
 function Cart() {
-  const { cart } = useContext(GlobalContext);
+
+  const cartItems = useSelector(state => state.cart.items);
+  const dispatch = useDispatch();
 
   return (
     <div className="cart-container">
       <h1>Cart</h1>
-      {!cart.length ? (
+      {!cartItems.length ? (
         <p>No Item Added! Please add something to your cart</p>
       ) : (
         <>
           <div className="cart-list">
-            {cart.map((item) => (
+            {cartItems.map((item) => (
               <div className="cart-item" key={item.id}>
                 <div className="item-price">${item.price}</div>
                 <div className="item-name">{item.name}</div>
@@ -29,6 +34,7 @@ function Cart() {
           </Link>
         </>
       )}
+     
     </div>
   );
 }

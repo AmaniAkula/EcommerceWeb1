@@ -9,7 +9,9 @@
     "saleDiscount": 22,
     "price": 27.33,
     "rating": 3,
-    "image": "/assets/caio-coelho-xFmXLq_KJxg-unsplash.jpg"
+    "image": "/assets/caio-coelho-xFmXLq_KJxg-unsplash.jpg",
+    "gender": "female",
+    "clothing": "Jeans"
   },
   {
     "id": 2,
@@ -21,6 +23,8 @@
     "saleDiscount": 28,
     "price": 20.96,
     "rating": 1,
+     "gender": "female",
+    "clothing": "Jeans",
     "image": "/assets/chris-lynch-pRdi2no2fvs-unsplash.jpg"
   },
   {
@@ -33,6 +37,8 @@
     "saleDiscount": 22,
     "price": 13.82,
     "rating": 2,
+     "gender": "female",
+    "clothing": "Jeans",
     "image": "/assets/benjamin-rascoe-KF-q_SGqswg-unsplash.jpg"
   },
   {
@@ -45,6 +51,8 @@
     "saleDiscount": 41,
     "price": 43.75,
     "rating": 4,
+     "gender": "female",
+    "clothing": "Jeans",
     "image": "/assets/phil-monte-4V4t0JcOM5E-unsplash.jpg"
   },
   {
@@ -57,6 +65,8 @@
     "saleDiscount": 21,
     "price": 27.9,
     "rating": 4,
+     "gender": "female",
+    "clothing": "Jeans",
     "image": "/assets/dami-adebayo-k6aQzmIbR1s-unsplash.jpg"
   },
   {
@@ -69,6 +79,8 @@
     "saleDiscount": 26,
     "price": 56.76,
     "rating": 2,
+     "gender": "female",
+    "clothing": "Jeans",
     "image": "/assets/irene-kredenets-dwKiHoqqxk8-unsplash.jpg"
   },
   {
@@ -81,6 +93,8 @@
     "saleDiscount": 38,
     "price": 77.42,
     "rating": 2,
+     "gender": "male",
+    "clothing": "Jeans",
     "image": "/assets/freestocks-8hAsLeE6Fbo-unsplash.jpg"
   },
   {
@@ -93,6 +107,8 @@
     "saleDiscount": 50,
     "price": 47.31,
     "rating": 5,
+       "gender": "male",
+    "clothing": "Hoodie",
     "image": "/assets/revolt-164_6wVEHfI-unsplash.jpg"
   },
   {
@@ -105,6 +121,8 @@
     "saleDiscount": 24,
     "price": 58.31,
     "rating": 2,
+       "gender": "male",
+    "clothing": "Hoodie",
     "image": "/assets/faith-yarn-Wr0TpKqf26s-unsplash.jpg"
   },
   {
@@ -117,6 +135,8 @@
     "saleDiscount": 42,
     "price": 77.64,
     "rating": 1,
+       "gender": "female",
+    "clothing": "Jeans",
     "image": "/assets/dom-hill-nimElTcTNyY-unsplash.jpg"
   },
   {

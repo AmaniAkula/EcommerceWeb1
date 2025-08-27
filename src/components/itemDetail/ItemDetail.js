@@ -1,19 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./ItemDetail.css";
 import items from "../../mockData/items.json";
-import { GlobalContext } from "../../context/GlobalState";
+
+import { addToCart } from '../../redux/actions/cartActions.js';
+import { useDispatch } from 'react-redux';
+
 
 const getItemDetail = (id) => items.filter((item) => item.id === id)[0];
 
 function ItemDetail() {
+    const dispatch = useDispatch();
   const params = useParams();
   const itemId = parseInt(params?.id);
   const item = !!itemId && getItemDetail(itemId);
-  const { addItemToCartList, cart } = useContext(GlobalContext);
-  const [isAdded, setIsAdded] = useState(
-    cart.findIndex((c) => c.id === itemId) > -1
-  );
 
   return (
     <div className="item-detail-container">
@@ -35,16 +35,8 @@ function ItemDetail() {
             <option value={"L"}> Select size (L)</option>
             <option value={"XL"}> Select size (XL)</option>
           </select>
-          <button
-            className="item-btn"
-            disabled={isAdded}
-            onClick={() => {
-              addItemToCartList(item);
-              setIsAdded(true);
-            }}
-          >
-            {isAdded ? <Link to="/cart">Go to Cart</Link> : "Add To bag"}
-          </button>
+        
+          <button className="item-size" onClick={() => dispatch(addToCart(item))}>Add to Cart</button>
           <p className="item-description">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
